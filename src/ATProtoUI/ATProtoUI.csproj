@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsAotCompatible>True</IsAotCompatible>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="json\post.json" />
+    <EmbeddedResource Include="json\post.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DateTimeExtensions" />
+    <PackageReference Include="FishyFlip" />
+  </ItemGroup>
+
+</Project>

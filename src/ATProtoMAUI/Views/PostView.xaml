@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:feed="clr-namespace:FishyFlip.Lexicon.App.Bsky.Feed;assembly=FishyFlip"
+             xmlns:tools="clr-namespace:ATProtoMAUI.Tools"
+		xmlns:controls="clr-namespace:ATProtoMAUI.Controls"
+			 x:DataType="feed:ThreadViewPost"
+             x:Class="ATProtoMAUI.Views.PostView">
+             <ContentView.Resources>
+                 <tools:RelativeTimeConverter x:Key="RelativeTimeConverter" />
+             </ContentView.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid ColumnDefinitions="100, *" ColumnSpacing="10">
+            <Border WidthRequest="75" Stroke="Gray" HeightRequest="75">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="50" />
+                </Border.StrokeShape>
+                <!-- <Image Source="{Binding Post.Author.Avatar}" /> -->
+            </Border>
+            
+            <Grid VerticalOptions="Center" Grid.Column="1" RowSpacing="5" RowDefinitions="Auto, Auto">
+                <Label FontSize="16" FontAttributes="Bold" Text="{Binding Post.Author.DisplayName}" />
+                <Label FontSize="15" Grid.Row="1" MaxLines="1" LineBreakMode="TailTruncation" HorizontalOptions="Start" Text="{Binding Post.Author.Handle, StringFormat='@{0}'}" />
+            </Grid>
+        </Grid>
+        <Grid Margin="25" Grid.Row="1" >
+            <controls:FacetedLabel Padding="4" FontSize="18" Grid.Row="1" Text="{Binding Post.PostRecord.Text}" Facets="{Binding Post.PostRecord.Facets}" />
+        </Grid>
+    </Grid>
+</ContentView>

@@ -1,0 +1,127 @@
+{
+  "$type": "app.bsky.feed.getPostThread#GetPostThreadOutput",
+  "thread": {
+    "$type": "app.bsky.feed.defs#threadViewPost",
+    "post": {
+      "$type": "app.bsky.feed.defs#postView",
+      "uri": "at://did:plc:okblbaji7rz243bluudjlgxt/app.bsky.feed.post/3lcmsu5uas22t",
+      "cid": "bafyreicr3qdt4klvcoy3nsqd3lwk5srogq74yv2oudj3kcjcdac4pjuquy",
+      "author": {
+        "$type": "app.bsky.actor.defs#profileViewBasic",
+        "did": "did:plc:okblbaji7rz243bluudjlgxt",
+        "handle": "drasticactions.xn--q9jyb4c",
+        "displayName": "",
+        "associated": {
+          "$type": "app.bsky.actor.defs#profileAssociated",
+          "chat": {
+            "$type": "app.bsky.actor.defs#profileAssociatedChat",
+            "allowIncoming": "following"
+          }
+        },
+        "labels": [],
+        "createdAt": "2024-02-19T14:50:56.846Z"
+      },
+      "record": {
+        "$type": "app.bsky.feed.post",
+        "text": "Test test @drasticactions.dev https://bing.com #\u65E5\u672C\u8A9ETest #Test #\u65E5\u672C\u8A9ETest #\u2705T\u2705e\u2705s\u2705t",
+        "facets": [
+          {
+            "$type": "app.bsky.richtext.facet",
+            "index": {
+              "$type": "app.bsky.richtext.facet#byteSlice",
+              "byteStart": 30,
+              "byteEnd": 46
+            },
+            "features": [
+              {
+                "$type": "app.bsky.richtext.facet#link",
+                "uri": "https://bing.com"
+              }
+            ]
+          },
+          {
+            "$type": "app.bsky.richtext.facet",
+            "index": {
+              "$type": "app.bsky.richtext.facet#byteSlice",
+              "byteStart": 47,
+              "byteEnd": 61
+            },
+            "features": [
+              {
+                "$type": "app.bsky.richtext.facet#tag",
+                "tag": "\u65E5\u672C\u8A9ETest"
+              }
+            ]
+          },
+          {
+            "$type": "app.bsky.richtext.facet",
+            "index": {
+              "$type": "app.bsky.richtext.facet#byteSlice",
+              "byteStart": 62,
+              "byteEnd": 67
+            },
+            "features": [
+              {
+                "$type": "app.bsky.richtext.facet#tag",
+                "tag": "Test"
+              }
+            ]
+          },
+          {
+            "$type": "app.bsky.richtext.facet",
+            "index": {
+              "$type": "app.bsky.richtext.facet#byteSlice",
+              "byteStart": 68,
+              "byteEnd": 82
+            },
+            "features": [
+              {
+                "$type": "app.bsky.richtext.facet#tag",
+                "tag": "\u65E5\u672C\u8A9ETest"
+              }
+            ]
+          },
+          {
+            "$type": "app.bsky.richtext.facet",
+            "index": {
+              "$type": "app.bsky.richtext.facet#byteSlice",
+              "byteStart": 83,
+              "byteEnd": 100
+            },
+            "features": [
+              {
+                "$type": "app.bsky.richtext.facet#tag",
+                "tag": "\u2705T\u2705e\u2705s\u2705t"
+              }
+            ]
+          },
+          {
+            "$type": "app.bsky.richtext.facet",
+            "index": {
+              "$type": "app.bsky.richtext.facet#byteSlice",
+              "byteStart": 10,
+              "byteEnd": 29
+            },
+            "features": [
+              {
+                "$type": "app.bsky.richtext.facet#mention",
+                "did": "did:plc:yhgc5rlqhoezrx6fbawajxlh"
+              }
+            ]
+          }
+        ],
+        "createdAt": "2024-12-06T08:57:26.393534Z"
+      },
+      "replyCount": 0,
+      "repostCount": 0,
+      "likeCount": 0,
+      "quoteCount": 0,
+      "indexedAt": "2024-12-06T08:57:27.156Z",
+      "labels": []
+    },
+    "replies": [],
+    "threadContext": {
+      "$type": "app.bsky.feed.defs#threadContext"
+    }
+  }
+}
